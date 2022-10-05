@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   color: var(--master-text-color);
   background-color: var(--pure-white-color);
 }
@@ -86,7 +86,7 @@ ul {
 /* .header-contacts-item {не задіяний} */
 
 .header-logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -140,7 +140,11 @@ ul {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -180,7 +184,6 @@ ul {
 .btn {
   cursor: pointer;
   font-family: inherit;
-  /* Чи можна використовувати бордер 0? */
   border: 0px solid transparent;
   border-radius: 4px;
 }
@@ -198,7 +201,18 @@ ul {
   width: calc((100% - 90px) / 4);
 }
 
-.benefit-item::before {
+.benefit-icon-container {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .benefit-item::before {
   width: 270px;
   height: 120px;
   content: '';
@@ -209,22 +223,18 @@ ul {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-
 .antenna-icon::before {
   background-image: url(../images/benefit-0.svg);
 }
-
 .clock-icon::before {
   background-image: url(../images/benefit-1.svg);
 }
-
 .diagram-icon::before {
   background-image: url(../images/benefit-2.svg);
 }
-
 .astronaut-icon::before {
   background-image: url(../images/benefit-3.svg);
-}
+} */
 
 .benefit-title {
   font-weight: 700;
@@ -280,7 +290,8 @@ ul {
 
 .member-item {
   background-color: var(--pure-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   width: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -356,7 +367,9 @@ ul {
   gap: 30px;
 }
 
-/* .client-item {не задіяний} */
+.client-item {
+  width: calc((100% - 150px) / 6);
+}
 
 .client-link {
   width: 170px;
@@ -383,7 +396,7 @@ ul {
 }
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -439,7 +452,9 @@ ul {
   gap: 10px;
 }
 
-/* .footer-social-item {не задіяний} */
+.footer-social-item {
+  width: calc((100% - 30px) / 4);
+}
 
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -456,8 +471,6 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
-/* .footer-social-icon {не задіяний} */
 
 .visually-hidden {
   position: absolute;
@@ -498,7 +511,8 @@ ul {
 .filter-button:focus {
   color: var(--pure-white-color);
   background-color: var(--accent-site-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-list {
