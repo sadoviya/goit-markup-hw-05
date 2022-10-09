@@ -638,13 +638,19 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   position: relative;
   width: 528px;
   height: 521px;
-  background: #ffffff;
+  background: var(--pure-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -659,15 +665,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background: var(--pure-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  fill: #000000;
 }
 
 .is-hidden {
- visibility: hidden;
- opacity: 0;
- pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.05);
 }
-
-/* ДОДОТИ АНІМАЦІЮ НА МОДАЛКУ */
